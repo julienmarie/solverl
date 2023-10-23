@@ -70,7 +70,7 @@ defmodule MinizincModel do
         ".mzn",
         ""
       ) <> ".mzn"
-
+    MinizincUtils.cmd("chmod 777 /tmp/*")
     model_body = MinizincModel.make_model(model)
     dzn_body = MinizincData.to_dzn(data)
 
